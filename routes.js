@@ -12,12 +12,9 @@ module.exports = function(app, passport) {
 	app.get('/', isLoggedIn, function(req, res) {
 		connection.query("SELECT bid, cid FROM Users where uid = ?", [req.user.uid], function(err, rows) {
 			if (err) console.log(err);
-			connection.query("SELECT * FROM Bible", function(err1, rows1) {
-				if (err1) console.log(err1);
-				connection.query("SELECT * FROM Classes", function(err2, rows2) {
-					if (err2) console.log(err2);
-					res.render('index.ejs', {mybid : rows[0].bid, mycid : rows[0].cid, biblelist : rows1, classlist : rows2});
-				})
+			connection.query("SELECT * FROM Classes", function(err2, rows2) {
+				if (err2) console.log(err2);
+				res.render('index.ejs', {mycid : rows[0].cid, classlist : rows2});
 			})
 		})
 	});
