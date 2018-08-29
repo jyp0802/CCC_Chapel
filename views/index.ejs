@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div class="maintitle" align="center">
-		<p style="color:white"> 금식수련회에 오신 것을 환영합니다!</p>
-		<p style="color:white"> 아래 목록에서 원하는 <주제강의/성서강해> 와 <선택강의> 를 선택하세요 </p>
+		<p style="color:white"> 채플에 오신 것을 환영합니다!</p>
+		<p style="color:white"> 아래 목록에서 원하는 <선택강의> 를 선택하세요 </p>
 		<!-- <h1 style="color:#c60f0f"> 강의 신청이 끝났습니다 </h1> -->
 	</div>
 	<div class="content" align="center">
@@ -20,7 +20,6 @@
 	<input type="button" onClick="location.href='/overview'" class="overview_button" value="신청현황">
 	<hr class="line"/>
 	<div class="mainbox">
-		<h3 style="color:white"> 2. 선택강의 </h3>
 		<% for (x in classlist) { %>
 		<div class="item" id="col">
 			<a href="/details?t=c&cid=<%= classlist[x].cid %>" id="c_title" class="item_title"><%= classlist[x].title %></a>
