@@ -1,0 +1,45 @@
+html, body {
+	background-color: #863253;
+}
+
+.title {
+	font-size: 32px;
+	color: #FFFFFF;
+	margin-bottom: 4px;
+}
+
+.outerbox {
+	width: 800px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 6px;
+	padding: 30px;
+	text-align: center;
+}
+
+.pinkbutton {
+	background-color: #863253;
+	color: white;
+	padding: 4px 0px 4px 0px;
+	border: none;
+	font-size: 18px;
+}
+
+.errormessage {
+	font-size: 12px;
+	color: #992222;
+}
+
+p {
+	font-size: 14px;
+	color: #666666;
+}
+
+input {
+	width: 200px;
+	padding: 2px 2px;
+	border-color: #AAAAAA;
+	border-radius: 1px;
+	border-width: 0.8px;
+}

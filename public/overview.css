@@ -1,0 +1,126 @@
+html, body {
+	background-color: #fcf5e8;
+}
+
+.maintitle{
+	font-size: 32px;
+}
+
+.mainbox {
+	width: 100%;
+	text-align: center;
+}
+
+.auth_main {
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	margin-top: 100px;
+	height: 360px;
+}
+
+.home_button{
+	position: absolute;
+	left: 100px;
+	top: 36px;
+	background-color: #efeae0;
+	color: #7c7c7c;
+	border: 2px solid #7c7c7c;
+	border-radius: 8px;
+	font-size: 22px;
+}
+
+.access_field {
+	border: 1.8px solid #7c7c7c;
+	border-radius: 4px;
+	height: 36px;
+	font-size: 20px;
+}
+
+.access_button {
+	border: 1.8px solid #7c7c7c;
+	border-radius: 4px;
+	height: 36px;
+	font-size: 20px;
+}
+
+.auth_home_form {
+	position: absolute;
+	bottom: 20px;
+	left: 240px;
+	right: 240px;
+	text-align: center;
+}
+
+.auth_home_button {
+	background-color: #efeae0;
+	color: #7c7c7c;
+	border: 2px solid #7c7c7c;
+	border-radius: 8px;
+	font-size: 22px;
+}
+
+.item {
+	border-radius: 5px;
+	width: 310px;
+	height: auto;
+	min-height: 200px;
+	display: inline-block;
+	margin: 5px;
+	padding: 0 6px 4px 6px;
+	font-family: 'Nanum Gothic', serif;
+	overflow: hidden;
+	text-align: left;
+	background-color: #efeae0;
+}
+
+.item_title {
+	font-size: 17px;
+	font-weight: bold;
+	overflow: hidden;
+	margin: 10px 0 8px 0;
+	text-align: center;
+	white-space: pre-line;
+}
+
+.firstitem {
+	border-radius: 5px;
+	width: 80%;
+	height: auto;
+	display: inline-block;
+	margin: 0% 5% 8px 5%;
+	font-family: 'Nanum Gothic', serif;
+	overflow: hidden;
+	text-align: left;
+	padding: 0px 10px 15px 10px;
+	background-color: #efeae0;
+}
+
+.firstitem_title {
+	margin: 10px 0 8px 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.line {
+	border:1.2px dashed grey;
+}
+
+.person {
+	margin: 0px 4px 3px 4px;
+	display: inline-block;
+}
+
+.person2 {
+	width: 140px;
+	margin: 0;
+	margin-bottom: 2px;
+	display: inline-table;
+	text-align: center;
+}
+
+.overview_auth {
+	text-align: center;
+	margin-top: 40px;
+}

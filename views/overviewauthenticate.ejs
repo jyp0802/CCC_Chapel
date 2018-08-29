@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>전체 신청 현황</title>
+	<link rel="stylesheet" type="text/css" href="overview.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="auth_main">
+		<div class="maintitle" align="center">
+			<p>전체 신청 현황</p>
+			<p style="font-size: 20px; margin-top: -30px;">(관리자만 확인 가능)</p>
+		</div>
+		<form action="/overview" method="post" class="overview_auth">
+			<input type="password" name="password" class="access_field" placeholder="비밀번호">
+			<input type="submit" class="access_button" value="확인">
+		</form>
+		<% if (wrong) { %>
+		<p style="color: red">비민번호가 틀렸습니다</p>
+		<% } %>
+		<div class="auth_home_form">
+			<input type="button" onClick="location.href='/'" class="auth_home_button" value="홈으로">
+		</div>
+	</div>
+</body>

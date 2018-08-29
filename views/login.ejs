@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2018 가을학기 채플</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+	<div align="center">
+		<p class="title">2017 대전·충남 금식 수련회</p>
+		<img src="poster.png" width=300 height=260 style="margin-bottom: 10px">
+	</div>
+	<div class="outerbox">
+		<form action="/login" method="post">
+
+			<select id="sel_campus" name="campus" required="true">
+				<option disabled selected value=""> -- 캠퍼스를 고르세요 -- </option>
+				<option id="c_건양대" value="건양대">건양대</option>
+				<option id="c_과기대" value="과기대">과기대</option>
+				<option id="c_대전대" value="대전대">대전대</option>
+				<option id="c_목원대" value="목원대">목원대</option>
+				<option id="c_배재대" value="배재대">배재대</option>
+				<option id="c_우송대" value="우송대">우송대</option>
+				<option id="c_중부대" value="중부대">중부대</option>
+				<option id="c_충남대" value="충남대">충남대</option>
+				<option id="c_카이스트" value="카이스트">카이스트</option>
+				<option id="c_한남대" value="한남대">한남대</option>
+				<option id="c_한밭대" value="한밭대">한밭대</option>
+				<option id="c_간사" value="간사">간사</option>
+			</select>
+
+			<select id="sel_year" name="year" required="true">
+				<option disabled selected value=""> -- 학번을 고르세요 -- </option>
+				<option id="y_10" value="10">10 이상</option>
+				<option id="y_11" value="11">11</option>
+				<option id="y_12" value="12">12</option>
+				<option id="y_13" value="13">13</option>
+				<option id="y_14" value="14">14</option>
+				<option id="y_15" value="15">15</option>
+				<option id="y_16" value="16">16</option>
+				<option id="y_17" value="17">17</option>
+				<option id="y_18" value="17">18</option>
+				<option id="y_0" value="0">기타</option>
+			</select>
+
+			<p style="margin-bottom: 4px">이름:</p>
+			<input type="text" id="name" name="name" placeholder="이름" required="true">
+			<p style="margin-bottom: 4px">비밀번호:</p>
+			<input type="password" name="password" placeholder="비밀번호" required="required">
+			<p class="errormessage"><%= login_message %></p>
+
+			<p>로그인이 처음일 경우 새로운 비밀번호를 생성하세요. 재 로그인일 경우 처음에 설정 했던 비밀번호를 입력하세요.</p>
+			<input type="submit" id="submit_button" class="pinkbutton" value="로그인">
+		</form>
+	</div>
+	<div align="center">
+		<p style="color:white;font-size:13px"> 비밀번호 분실 및 오류 보고는 010-2714-9608 / 010-9492-3829 로 해주세요 </p>
+	</div>
+	<% if (wrong) { %>
+	<script>
+		document.getElementById('c_'+"<%= campus %>").selected = true;
+		document.getElementById('y_'+"<%= year %>").selected = true;
+		document.getElementById('name').value = "<%= name %>"
+	</script>
+	<% } %>
+</body>
+</html>

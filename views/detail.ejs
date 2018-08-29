@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>상세 내용</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="maintitle" align="center">
+		<p style="color:white"> 강의정보</p>
+	</div>
+	<div class="bigbox" align="center">
+		<h2 style="color:white" class="title"><%= classinfo.title %></h2>
+		<p class="detail_info">강사: <%= classinfo.speaker %></p>
+		<p class="detail_info">수강인원: <%= classinfo.current %>/<%= classinfo.max %></p>
+		<p class="class_details"><%= classinfo.details %></p>
+		<% if (registered) { %>
+		<form action="/cancel" class="detail_form" onsubmit="return confirm('강의 신청을 취소하겠습니까?');">
+			<input type="hidden" name="cid" value="<%= classinfo.cid %>"/>
+		  <input type="submit" class="detail_button" value="취소하기"/>
+		</form>
+		<% } else { %>
+		<form action="/register" class="detail_form">
+			<input type="hidden" name="cid" value="<%= classinfo.cid %>"/>
+		  <input type="submit" class="detail_button" value="신청하기"/>
+		</form>
+		<% } %>
+	</div>
+	<div align="center">
+		<input type="button" onClick="location.href='/'" class="buttonhome" value="홈으로">
+	</div>
+</body>
+</html>

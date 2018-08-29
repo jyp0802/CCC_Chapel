@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>내가 신청한 강의</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="maintitle" align="center">
+		<p style="color:white"> 내가 신청한 강의 </p>
+	</div>
+	<div class="mybigbox">
+		<div class="myside" style="float: right;">
+			<h3 style="color:white">선택특강</h3>
+			<% if (creg) { %>
+			<div class="myitem" align="center">
+				<h3 style="color:white"><%= classinfo.title %></h3>
+				<p style="color:white">강사: <%= classinfo.speaker %></p>
+				<p style="color:white">장소: <%= classinfo.location %></p>
+				<p style="color:white">수강인원: <%= classinfo.current %>/<%= classinfo.max %></p>
+				<form action="/cancel" onsubmit="return confirm('강의 신청을 취소하겠습니까?');">
+					<input type="hidden" name="cid" value="<%= classinfo.cid %>"/>
+				  <input type="submit" class="buttoncenter" value="취소하기"/>
+				</form>
+			</div>
+			<% } else { %>
+			<div class="myitem" align="center">
+				<h4 style="color:white">강의를 선택하지 않으셨습니다</h4>
+			</div>
+			<% } %>
+		</div>
+	</div>
+	<div align="center">
+		<input type="button" onClick="location.href='/'" class="buttonhome" value="홈으로">
+	</div>
+</body>
+</html>

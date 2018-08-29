@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2017 대전충남 금식수련회</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="maintitle" align="center">
+		<p style="color:white"> 금식수련회에 오신 것을 환영합니다!</p>
+		<p style="color:white"> 아래 목록에서 원하는 <주제강의/성서강해> 와 <선택강의> 를 선택하세요 </p>
+		<!-- <h1 style="color:#c60f0f"> 강의 신청이 끝났습니다 </h1> -->
+	</div>
+	<div class="content" align="center">
+		<a href="/my" style="font-size: 20px;color:white">내가 신청한 강의 보러 가기</a>
+	</div>
+	<input type="button" onClick="location.href='/logout'" class="logout_button" value="로그아웃">
+	<input type="button" onClick="location.href='/overview'" class="overview_button" value="신청현황">
+	<hr class="line"/>
+	<div class="mainbox">
+		<h3 style="color:white"> 2. 선택강의 </h3>
+		<% for (x in classlist) { %>
+		<div class="item" id="col">
+			<a href="/details?t=c&cid=<%= classlist[x].cid %>" id="c_title" class="item_title"><%= classlist[x].title %></a>
+			<p class="index_details">강사: <%= classlist[x].speaker %></p>
+			<p class="index_details">수강인원: <%= classlist[x].current %>/<%= classlist[x].max %></p>
+			<% if (classlist[x].cid == mycid) { %>
+			<form action="/cancel" onsubmit="return confirm('강의 신청을 취소하겠습니까?');" class="index_button">
+				<input type="hidden" name="cid" value="<%= classlist[x].cid %>"/>
+			  <input type="submit" class="cancel_button" value="취소하기"/>
+			</form>
+			<% } else { %>
+			<form action="/register" class="index_button">
+				<input type="hidden" name="cid" value="<%= classlist[x].cid %>"/>
+			  <input type="submit" class="buttoncenter" value="신청하기"/>
+			</form>
+			<% } %>
+		</div>
+		<% } %>
+		<% if (classlist.length == 0) { %>
+		<p style="color:#000; font-size: 30px"> 강의가 없습니다 </p>
+		<% } %>
+	</div>
+</body>
+</html>

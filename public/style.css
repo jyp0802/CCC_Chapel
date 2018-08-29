@@ -1,0 +1,177 @@
+html, body {
+	background-color: #6699bb;
+	margin: 0px 0px 0px 0px;
+}
+
+.maintitle{
+	font-size: 30px;
+}
+
+.content{
+	margin-top: 0px;
+	font-size: 16px;
+}
+
+.mainbox {
+	width: 100%;
+	text-align: center;
+	display: table;
+}
+
+.bigbox {
+	position: relative;
+	border: 1px solid #FFFFFF;
+	border-radius: 2px;
+	margin: auto;
+	width: 800px;
+	height: 440px;
+	alignment-baseline: center;
+	align-content: center;
+}
+
+.title {
+	white-space: pre-line;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.class_details {
+	color: white;
+	font-style: italic;
+	font-size: 22px;
+	padding: 10px 30px 20px 30px;
+	white-space: pre-line;
+}
+
+.item {
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	width: 400px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+	font-family: 'Nanum Gothic', serif;
+	padding: 8px;
+	overflow: hidden;
+	position: relative;
+}
+
+.item_title {
+	text-decoration: none;
+	border-bottom: 1.5px solid white;
+	font-size: 20px;
+	color: white;
+	white-space: pre-line;
+}
+
+.index_details {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 16px;
+}
+
+.line{
+	border:1.5px dashed #555;
+}
+
+.overview_button {
+	position: absolute;
+	right: 3%;
+	top: 40px;
+	background-color: transparent;
+	color: white;
+	border: 2px solid #FFFFFF;
+	border-radius: 8px;
+	font-size: 20px;
+}
+
+.logout_button {
+	position: absolute;
+	right: 3%;
+	margin-top: -32px;
+	background-color: transparent;
+	color: white;
+	border: 2px solid #FFFFFF;
+	border-radius: 8px;
+	font-size: 20px;
+}
+
+.detail_form {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	right: 40px;
+}
+
+.detail_button {
+	background-color: transparent;
+	color: white;
+	border: 2px solid #FFFFFF;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+.detail_info {
+	margin: 8px 0 0 0;
+	color: white;
+	font-size: 20px;
+}
+
+.cancel_button {
+	background-color: white;
+	color: #6699bb;
+	font-weight: bold;
+	border: 2px solid #FFFFFF;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.buttoncenter {
+	background-color: transparent;
+	color: white;
+	border: 2px solid #FFFFFF;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.buttonhome {
+	margin-top: 40px;
+	background-color: transparent;
+	color: white;
+	border: 2px solid #FFFFFF;
+	border-radius: 4px;
+	font-size: 22px;
+}
+
+.index_button {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	right: 20px;
+}
+
+.mybigbox {
+	margin: auto;
+	width: 900px;
+	height: 440px;
+	alignment-baseline: center;
+	align-content: center;
+}
+
+.myside {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	font-family: 'Nanum Gothic', serif;
+}
+
+.myitem {
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	width: 95%;
+	height: 350px;
+	display: inline-block;
+	margin: 10px;
+	font-family: 'Nanum Gothic', serif;
+	padding: 10px;
+}

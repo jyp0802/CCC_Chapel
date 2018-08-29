@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>확인</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="outer">
+		<% if (t == 'de') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 강의를 찾을 수 없습니다</p>
+		</div>
+		<% } else if (t == 'ce') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 강의를 취소할 수 없습니다</p>
+		</div>
+		<% } else if (t == 'cet') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 벌써 강의를 취소하셨습니다</p>
+		</div>
+		<% } else if (t == 'cs') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 강의를 취소했습니다</p>
+		</div>
+		<% } else if (t == 'ref') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 수강 인원이 다 찼습니다</p>
+		</div>
+		<% } else if (t == 'red') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 강의는 하나만 신청할 수 있습니다</p>
+		</div>
+		<% } else if (t == 'ret') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 벌써 강의를 신청하셨습니다</p>
+		</div>
+		<% } else if (t == 'rs') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 신청 되었습니다</p>
+		</div>
+		<% } else if (t == 'me') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 아직 신청한 강의가 없습니다</p>
+		</div>
+		<% } else if (t == 'e') { %>
+		<div align="center" class="maintitle">
+			<p style="color:white"> 에러</p>
+		</div>
+		<% } %>
+		<div align="center">
+		<input type="button" onClick="location.href='/'" class="buttoncenter" value="홈으로">
+		</div>
+	</div>
+
+</body>
