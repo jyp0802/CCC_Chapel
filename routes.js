@@ -14,7 +14,7 @@ module.exports = function(app, passport) {
 			if (err) console.log(err);
 			connection.query("SELECT * FROM Classes", function(err2, rows2) {
 				if (err2) console.log(err2);
-				res.render('index.ejs', {mycid : rows.cid, classlist : rows2});
+				res.render('index.ejs', {mycid : rows[0].cid, classlist : rows2});
 			})
 		})
 	});
