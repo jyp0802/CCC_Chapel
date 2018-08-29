@@ -114,14 +114,14 @@ module.exports = function(app, passport) {
 	});
 
 	app.get('/my', isLoggedIn, function(req, res) {
-		connection.query("SELECT cid, bid FROM Users where uid = ?", [req.user.uid], function(err, rows) {
-			connection.query("SELECT * FROM Classes where cid = ?", [rows[0].cid], function(err1, rows1) {
+		connection.query("SELECT cid FROM Users where uid = ?", [req.user.uid], function(err, rows) {
+			connection.query("SELECT * FROM Classes where cid = ?", [rows.cid], function(err1, rows1) {
 				if (err || err1)
 					res.redirect('/confirm?t=e');
 				var creg = true;
 				if (!rows1.length)
 					creg = false;
-				res.render('my.ejs', {creg : creg, classinfo : rows1[0]});
+				res.render('my.ejs', {creg : creg, classinfo : rows1});
 			})
 		})
 	});
@@ -134,7 +134,7 @@ module.exports = function(app, passport) {
 		if (req.body.password == overview_pw) {
 			connection.query("SELECT cid, title FROM Classes", function(err1, classes) {
 				if (err1) console.log(err1);
-				connection.query("SELECT name, campus, cid, bid FROM Users", function(err, rows) {
+				connection.query("SELECT name, campus, cid FROM Users", function(err, rows) {
 					var classlist = [["미신청"]];
 					for (i in classes)
 						classlist.push([classes[i].title]);
