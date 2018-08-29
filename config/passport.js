@@ -45,7 +45,7 @@ module.exports = function(passport) {
                     return done(err);
 
                 if (!rows.length) {
-                    connection.query("INSERT into Users (name,password,campus,year) values (?,?,?,?,?)", [name, password, campus, year], function(err1, rows1){
+                    connection.query("INSERT into Users (name,password,campus,year) values (?,?,?,?)", [name, password, campus, year], function(err1, rows1){
                         if (err1)
                             return done(err1);
                         newUserMysql.uid = rows1.insertId;
