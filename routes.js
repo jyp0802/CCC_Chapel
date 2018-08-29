@@ -22,10 +22,9 @@ module.exports = function(app, passport) {
 	app.get('/login', function(req, res) {
 		var loginMessage = req.flash('loginMessage');
 		var name = req.flash('name');
-		var earth = req.flash('earth');
 		var campus = req.flash('campus');
 		var year = req.flash('year');
-		res.render('login.ejs', {wrong : (loginMessage.length != 0), login_message : loginMessage, name : name, earth : earth, campus : campus, year : year});
+		res.render('login.ejs', {wrong : (loginMessage.length != 0), login_message : loginMessage, name : name, campus : campus, year : year});
 	});
 
 	app.post('/login', passport.authenticate('local-login', { successRedirect : '/', failureRedirect : '/' }));
@@ -115,13 +114,13 @@ module.exports = function(app, passport) {
 
 	app.get('/my', isLoggedIn, function(req, res) {
 		connection.query("SELECT cid FROM Users where uid = ?", [req.user.uid], function(err, rows) {
-			connection.query("SELECT * FROM Classes where cid = ?", [rows.cid], function(err1, rows1) {
+			connection.query("SELECT * FROM Classes where cid = ?", [rows[0].cid], function(err1, rows1) {
 				if (err || err1)
 					res.redirect('/confirm?t=e');
 				var creg = true;
 				if (!rows1.length)
 					creg = false;
-				res.render('my.ejs', {creg : creg, classinfo : rows1});
+				res.render('my.ejs', {creg : creg, classinfo : rows1[0]});
 			})
 		})
 	});
