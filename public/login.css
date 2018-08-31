@@ -1,16 +1,16 @@
 html, body {
-	background-color: #000000;
+	background-color: #FFFFFF;
 }
 
 .title {
 	font-size: 32px;
-	color: #FFFFFF;
+	color: #222222;
 	margin-bottom: 4px;
 }
 
 .outerbox {
 	width: 800px;
-	background-color: #FFFFFF;
+	background-color: #888888;
 	overflow: hidden;
 	margin: auto;
 	border-radius: 6px;
@@ -19,7 +19,7 @@ html, body {
 }
 
 .pinkbutton {
-	background-color: #888888;
+	background-color: #444444;
 	color: white;
 	padding: 4px 0px 4px 0px;
 	border: none;
