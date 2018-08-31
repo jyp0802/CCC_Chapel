@@ -152,6 +152,7 @@ html, body {
 }
 
 .index_button {
+	margin: 10px;
 	float: left;
 }
 
