@@ -38,6 +38,7 @@ p {
 
 select {
 	width: 160px;
+	height: 20px;
 	padding: 2px 2px;
 	border-color: #AAAAAA;
 	border-radius: 4px;
@@ -46,6 +47,7 @@ select {
 
 input {
 	width: 160px;
+	height: 20px;
 	padding: 2px 2px;
 	border-color: #AAAAAA;
 	border-radius: 4px;
