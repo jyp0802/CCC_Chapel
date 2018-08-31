@@ -36,10 +36,18 @@ p {
 	color: #000000;
 }
 
+select {
+	width: 200px;
+	padding: 2px 2px;
+	border-color: #AAAAAA;
+	border-radius: 2px;
+	border-width: 1px;
+}
+
 input {
 	width: 200px;
 	padding: 2px 2px;
 	border-color: #AAAAAA;
-	border-radius: 10px;
-	border-width: 0.8px;
+	border-radius: 2px;
+	border-width: 1px;
 }
