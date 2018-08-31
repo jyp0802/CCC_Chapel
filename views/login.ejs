@@ -44,16 +44,16 @@
 
 			<p style="margin-bottom: 4px">이름:</p>
 			<input type="text" id="name" name="name" placeholder="이름" required="true">
-			<p style="margin-bottom: 4px">비밀번호:</p>
-			<input type="password" name="password" placeholder="비밀번호" required="required">
+			<p style="margin-bottom: 4px">전화번호:</p>
+			<input type="text" name="password" placeholder="예시...: 01012345678" required="required">
 			<p class="errormessage"><%= login_message %></p>
 
-			<p>로그인이 처음일 경우 새로운 비밀번호를 생성하세요. 재 로그인일 경우 처음에 설정 했던 비밀번호를 입력하세요.</p>
+			<p><!-- 로그인이 처음일 경우 새로운 비밀번호를 생성하세요. 재 로그인일 경우 처음에 설정 했던 비밀번호를 입력하세요. --></p>
 			<input type="submit" id="submit_button" class="loginbutton" value="로그인">
 		</form>
 	</div>
 	<div align="center">
-		<p style="font-size:13px"> 비밀번호 분실 및 오류 보고는 010-2714-9608로 해주세요 </p>
+		<p style="font-size:13px"> 로그인이 안될 시에 010-2714-9608로 해주세요 </p>
 	</div>
 	<% if (wrong) { %>
 	<script>
