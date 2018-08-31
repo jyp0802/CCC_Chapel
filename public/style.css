@@ -140,7 +140,6 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
-	left: 40px;
 }
 
 .buttonhome {
@@ -153,7 +152,6 @@ html, body {
 }
 
 .index_button {
-	position: absolute;
 	bottom: 10px;
 	left: 20px;
 	right: 20px;
