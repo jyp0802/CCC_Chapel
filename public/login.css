@@ -2,12 +2,6 @@ html, body {
 	background-color: #FFFFFF;
 }
 
-.title {
-	font-size: 32px;
-	color: #222222;
-	margin-bottom: 4px;
-}
-
 .outerbox {
 	width: 800px;
 	background-color: #d2e7f4;
@@ -21,6 +15,7 @@ html, body {
 .loginbutton {
 	background-color: #595f63;
 	color: white;
+	height: 32px;
 	padding: 4px 0px 4px 0px;
 	border: none;
 	font-size: 18px;
@@ -38,7 +33,7 @@ p {
 
 select {
 	width: 160px;
-	height: 24px;
+	height: 26px;
 	padding: 2px 2px;
 	border-color: #AAAAAA;
 	border-radius: 4px;
