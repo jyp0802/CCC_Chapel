@@ -1,8 +1,8 @@
 {
   "name": "node-authentication",
-  "main": "server.js",
+  "main": "server0.js",
   "scripts": {
-    "start": "node ./server"
+    "start": "pm2 start server0.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
