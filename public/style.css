@@ -124,7 +124,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
-	float: left;
+	display: inline-block;
 }
 
 .buttoncenter {
@@ -133,7 +133,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
-	float: left;
+	display: inline-block;
 }
 
 .detailbutton {
@@ -142,7 +142,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
-	float: left;
+	display: inline-block;
 }
 
 .buttonhome {
