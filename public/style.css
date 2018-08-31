@@ -31,8 +31,8 @@ html, body {
 
 .title {
 	white-space: pre-line;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .class_details {
@@ -80,7 +80,7 @@ html, body {
 	top: 40px;
 	background-color: transparent;
 	color: white;
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 8px;
 	font-size: 20px;
 }
@@ -91,7 +91,7 @@ html, body {
 	margin-top: -32px;
 	background-color: transparent;
 	color: white;
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 8px;
 	font-size: 20px;
 }
@@ -106,7 +106,7 @@ html, body {
 .detail_button {
 	background-color: transparent;
 	color: white;
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 20px;
 }
@@ -183,7 +183,7 @@ html, body {
 }
 
 .myitem {
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 3px;
 	width: 95%;
 	height: 350px;
