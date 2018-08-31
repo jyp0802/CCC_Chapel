@@ -55,7 +55,7 @@ html, body {
 .auth_home_button {
 	background-color: #efeae0;
 	color: #7c7c7c;
-	border: 2px solid #7c7c7c;
+	border: 1px solid #7c7c7c;
 	border-radius: 8px;
 	font-size: 22px;
 }
