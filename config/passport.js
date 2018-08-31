@@ -58,7 +58,7 @@ module.exports = function(passport) {
                         req.flash('name', name);
                         req.flash('campus', campus);
                         req.flash('year', year);
-                        return done(null, false, req.flash('loginMessage', '비밀번호가 다릅니다.')); // create the loginMessage and save it to session as flashdata
+                        return done(null, false, req.flash('loginMessage', '전화번호가 다릅니다.')); // create the loginMessage and save it to session as flashdata
                     }
 
                     // all is well, return successful user
