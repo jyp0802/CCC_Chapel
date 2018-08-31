@@ -18,8 +18,8 @@ html, body {
 	text-align: center;
 }
 
-.pinkbutton {
-	background-color: #444444;
+.loginbutton {
+	background-color: #595f63;
 	color: white;
 	padding: 4px 0px 4px 0px;
 	border: none;
@@ -40,6 +40,6 @@ input {
 	width: 200px;
 	padding: 2px 2px;
 	border-color: #AAAAAA;
-	border-radius: 1px;
+	border-radius: 10px;
 	border-width: 0.8px;
 }
