@@ -23,7 +23,7 @@
 		<% for (x in classlist) { %>
 		<div class="item" id="col">
 			<p id="c_title" class="item_title"><%= classlist[x].title %></a>
-			<p class="index_details" style="color: #5b390b">영역: <%= classlist[x].topic %></p>
+			<p class="index_details" style="color: #5b390b; font-weight: bold;">영역: <%= classlist[x].topic %></p>
 			<p class="index_details">담당간사: <%= classlist[x].speaker %></p>
 			<p class="index_details">수강인원: <%= classlist[x].current %>/<%= classlist[x].max %></p>
 
