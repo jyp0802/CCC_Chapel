@@ -134,6 +134,15 @@ html, body {
 	font-size: 16px;
 }
 
+.detailbutton {
+	background-color: transparent;
+	color: white;
+	border: 2px solid #FFFFFF;
+	border-radius: 4px;
+	font-size: 16px;
+	left: 40px;
+}
+
 .buttonhome {
 	margin-top: 40px;
 	background-color: transparent;
@@ -146,15 +155,8 @@ html, body {
 .index_button {
 	position: absolute;
 	bottom: 10px;
-	left: 30px;
-	right: 10px;
-}
-
-.index_detail_button {
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	right: 30px;
+	left: 20px;
+	right: 20px;
 }
 
 .mybigbox {

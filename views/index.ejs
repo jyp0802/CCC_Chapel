@@ -26,9 +26,9 @@
 			<p class="index_details">영역: <%= classlist[x].topic %></p>
 			<p class="index_details">담당간사: <%= classlist[x].speaker %></p>
 			<p class="index_details">수강인원: <%= classlist[x].current %>/<%= classlist[x].max %></p>
-			<form action="/details" class="index_detail_button">
+			<form action="/details" class="index_button">
 				<input type="hidden" name="cid" value="<%= classlist[x].cid %>"/>
-			  <input type="submit" class="cancel_button" value="내용보기"/>
+			  <input type="submit" class="detailbutton" value="내용보기"/>
 			</form>
 			<% if (classlist[x].cid == mycid) { %>
 			<form action="/cancel" onsubmit="return confirm('강의 신청을 취소하겠습니까?');" class="index_button">
