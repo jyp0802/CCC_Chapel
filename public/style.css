@@ -124,7 +124,6 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
-	float: left;
 }
 
 .buttoncenter {
@@ -133,7 +132,6 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
-	float: left;
 }
 
 .detailbutton {
@@ -142,7 +140,6 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
-	float: left;
 }
 
 .buttonhome {
@@ -155,11 +152,11 @@ html, body {
 }
 
 .index_button {
-	position: absolute;
-	background-color: yellow;
+	background-color: #336699;
 	bottom: 10px;
 	left: 20px;
 	right: 20px;
+	float: left;
 }
 
 .mybigbox {
