@@ -54,6 +54,7 @@ html, body {
 	padding: 8px;
 	overflow: hidden;
 	position: relative;
+	text-align: center;
 }
 
 .item_title {
@@ -123,6 +124,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
+    cursor: pointer;
 }
 
 .buttoncenter {
@@ -131,6 +133,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
+    cursor: pointer;
 }
 
 .detailbutton {
@@ -139,6 +142,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
+    cursor: pointer;
 }
 
 .buttonhome {
@@ -148,6 +152,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 22px;
+    cursor: pointer;
 }
 
 .index_button {
