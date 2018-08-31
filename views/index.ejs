@@ -26,7 +26,7 @@
 			<p class="index_details">영역: <%= classlist[x].topic %></p>
 			<p class="index_details">담당간사: <%= classlist[x].speaker %></p>
 			<p class="index_details">수강인원: <%= classlist[x].current %>/<%= classlist[x].max %></p>
-			<form action="/details" class="index_button">
+			<form action="/details" class="detail_button">
 				<input type="hidden" name="cid" value="<%= classlist[x].cid %>"/>
 			  <input type="submit" class="cancel_button" value="내용보기"/>
 			</form>
