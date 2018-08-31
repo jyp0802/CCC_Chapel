@@ -47,7 +47,7 @@ html, body {
 	border: 2px solid #FFFFFF;
 	border-radius: 3px;
 	width: 400px;
-	height: 240px;
+	height: 230px;
 	display: inline-block;
 	margin: 10px;
 	font-family: 'Nanum Gothic', serif;
@@ -121,7 +121,7 @@ html, body {
 	background-color: white;
 	color: #6699bb;
 	font-weight: bold;
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
     cursor: pointer;
@@ -130,7 +130,7 @@ html, body {
 .buttoncenter {
 	background-color: transparent;
 	color: white;
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
     cursor: pointer;
@@ -139,7 +139,7 @@ html, body {
 .detailbutton {
 	background-color: transparent;
 	color: white;
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 16px;
     cursor: pointer;
@@ -149,7 +149,7 @@ html, body {
 	margin-top: 40px;
 	background-color: transparent;
 	color: white;
-	border: 2px solid #FFFFFF;
+	border: 1px solid #FFFFFF;
 	border-radius: 4px;
 	font-size: 22px;
     cursor: pointer;
@@ -157,6 +157,7 @@ html, body {
 
 .index_button {
 	margin: 10px;
+	margin-top: 20px;
 	display: inline-block;
 }
 
